@@ -5,20 +5,23 @@ package com.example.ttyady.dentaku;
  */
 public class Note {
     protected int id;
-    protected String note;
-    protected String lastupdate;
+    protected Double result;
+    protected String store;
+    protected String memo;
 
-    public Note(int id,String note, String lastupdate){
+    public Note(int id,Double result, String store, String memo){
         this.id = id;
-        this.note = note;
-        this.lastupdate = lastupdate;
+        this.result = result;
+        this.store = store;
+        this.memo = memo;
     }
-    public String getNote(){
-        return note;
+    public Double getResult(){
+        return result;
     }
-    public String getLastupdate(){
-        return lastupdate;
+    public String getStore(){
+        return store;
     }
+    public String getMemo() { return memo; }
     public int getId(){
         return id;
     }

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_equal).setOnClickListener(buttonOperatorListener);
 
         findViewById(R.id.button_save).setOnClickListener(buttonSaveListener);
-        findViewById(R.id.button_read).setOnClickListener(buttonOperatorListener);
+        findViewById(R.id.button_read).setOnClickListener(buttonReadListener);
 
 
 
@@ -118,6 +118,17 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplication(), SaveActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putDouble("result",result);
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
+    };
+
+    View.OnClickListener buttonReadListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplication(), MemoActivity.class);
             startActivity(intent);
         }
     };
