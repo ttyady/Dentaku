@@ -56,7 +56,6 @@
         android:orientation="horizontal">
 
 
-
         <Button
             style="?attr/buttonBarButtonStyle"
             android:id="@+id/button_save"
