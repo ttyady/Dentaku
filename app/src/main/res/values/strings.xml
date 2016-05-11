@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Dentaku</string>
+    <string name="save_name">メモを保存</string>
+    <string name="resultview">計算結果:</string>
+    <string name="storeview">店名:</string>
+    <string name="savebuttontext">保存</string>
+    <string name="cancelbuttontext">キャンセル</string>
 </resources>

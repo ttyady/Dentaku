@@ -1,5 +1,6 @@
 package com.example.ttyady.dentaku;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -52,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_multiply).setOnClickListener(buttonOperatorListener);
         findViewById(R.id.button_divide).setOnClickListener(buttonOperatorListener);
         findViewById(R.id.button_equal).setOnClickListener(buttonOperatorListener);
+
+        findViewById(R.id.button_save).setOnClickListener(buttonSaveListener);
+        findViewById(R.id.button_read).setOnClickListener(buttonOperatorListener);
+
+
+
 
     }
 
@@ -106,4 +113,13 @@ public class MainActivity extends AppCompatActivity {
                 return value1;
         }
     }
+
+    View.OnClickListener buttonSaveListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplication(), SaveActivity.class);
+            startActivity(intent);
+        }
+    };
+
 }
