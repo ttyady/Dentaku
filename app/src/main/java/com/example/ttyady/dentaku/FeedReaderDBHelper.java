@@ -9,6 +9,8 @@ import android.provider.BaseColumns;
  * Created by ttyady on 2016/05/12.
  */
 public class FeedReaderDBHelper extends SQLiteOpenHelper {
+
+
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "FeedReader.db";
 
